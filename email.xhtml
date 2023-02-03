@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+
+
+        <style>
+
+            body{
+                background-color:#fefefe;
+            }
+            h5{
+
+
+                font-size: 20px;
+                color:darkred;
+            }
+            input{
+                margin: 10px;
+                
+            }
+        </style>
+
+
+
+    </h:head>
+
+
+    <center>
+        <h2>Log In/ Sign Up Form</h2>
+            <div class ="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                         <h:form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <h:inputText class="form-control"  value="#{login.email}"/>
+                                    <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <h:inputSecret class="form-control" value="#{login.password}"/>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                           <!--<h:commandButton value="Submit" class="btn btn-primary" action="up.xhtml"/>-->
+                                <h:commandButton value="login" class="btn btn-primary" action="#{login.doShow()}"/>   
+                                <a href="comshow.xhtml" class="card_link btn btn-warning">Search new job</a>
+
+                                <h:commandButton class="btn btn-primary" value="Reset" action="main.xhtml"/>
+                         </h:form>
+                    </div>
+                        <div class="col-md-4"></div>
+
+
+                    </div>
+                </div>
+    </center>
+    <div class="p-3 mb-2 bg-success text-white"></div>        
+    <div id="services" class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/success_340.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Trainer</h5>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/find.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Freelancer</h5>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="img/desk.jpg" class="card-img-top" alt="..."/>
+
+                <div class="card-body">
+                    <h5 class="card-title">IT Sector</h5>
+                </div>
+            </div>
+        </div>
+    </div><br></br>
+
+
+</html>
+
